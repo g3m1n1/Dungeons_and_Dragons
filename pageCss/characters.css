@@ -1,0 +1,16 @@
+#characterSection{
+      background-color:#E91E63;
+    }
+  paper-tabs {
+      background-color: transparent;
+      color: #FFF;
+
+    }
+
+    paper-tabs::shadow #selectionBar {
+      background-color:#F8BBD0;
+    }
+
+    paper-tabs paper-tab::shadow #ink {
+      color:#F8BBD0;
+    }

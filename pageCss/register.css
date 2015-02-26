@@ -1,0 +1,36 @@
+ /* Placeholder text color*/
+   ::-webkit-input-placeholder {
+    color:    #FFF;
+}
+:-moz-placeholder {
+    color:    #FFF;
+}
+::-moz-placeholder {
+    color:    #FFF;
+}
+:-ms-input-placeholder {
+    color:    #FFF;
+}
+::shadow .unfocused-underline{
+  background-color:#FFF;
+}
+::shadow .label-text{
+      color:#FFF;
+    }
+
+
+    /* Background color */
+#registerSection{
+      background-color:#FF9800;
+    }
+
+
+
+    /*Send button styles. */
+    #registerSection input[type=submit]{
+      color:#FFF;
+      width:100px;
+    }
+    #registerSection input[type=submit]:active{
+      background-color:rgba(0,0,0,0.1);
+    }

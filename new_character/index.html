@@ -1,0 +1,97 @@
+<!doctype html>
+
+
+<html>
+  <head>
+    <title>New character</title>
+     <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0">
+    <meta name="mobile-web-app-capable" content="yes">
+    <meta name="apple-mobile-web-app-capable" content="yes">
+
+
+  </head>
+  <body>
+
+    <h1>New character</h1>
+
+
+
+
+    <select id="classes">
+
+
+    </select>
+<button onclick="setCharacterClass();">Select this class</button>
+
+
+
+
+
+  <script>
+
+  loadJSON("classes.json",function(response){ // Get the JSON file
+    json = JSON.parse(response); // Parse JSON as JavaScript
+
+    var dropdown = document.getElementById("classes") // Cache dropdown.
+
+    json["classes"].forEach(function(classes){ // Loop trough array
+
+    var option = document.createElement("option"), // Create option tag
+        text = document.createTextNode(classes['name']);
+
+
+        option.appendChild(text);
+
+        dropdown.appendChild(option);
+
+
+
+      //document.getElementById("classes").innerHTML += "<option value="+classes['name']+">"+classes['name']+"</option>"; // Add every item into a dropdown.
+    });
+
+    // After the loop completes do...
+
+
+
+    })
+
+
+
+
+
+
+function setCharacterClass(){
+  var object = document.getElementById("pdf");
+  if(document.body.contains(object)){
+    document.body.removeChild(object);
+  }
+
+  var classDropdown = document.getElementById("classes"),
+      value = classDropdown.value;
+
+     var pdf = document.createElement("object");
+     pdf.type = "application/pdf";
+     pdf.data = value+".pdf";
+    pdf.id = "characterPdf";
+
+    document.body.appendChild(pdf);
+
+}
+
+
+
+  function loadJSON(file, callback){ // Create a function to load files with AJAX
+    var xobj = new XMLHttpRequest(); // Create a new http request
+    xobj.overrideMimeType("application/json"); // Set mime type to JSON
+    xobj.open('POST',file,true); // Use post to gather the file asynchronously
+    xobj.onreadystatechange = function(){ // If the ready state changes
+      if(xobj.readyState == 4 && xobj.status == "200"){ // And if the file was loaded succesfully
+        callback(xobj.responseText); // Do whatever you want with the file
+      }
+    };
+    xobj.send(null); // Send the request
+  }
+  </script>
+  </body>
+
+</html>

@@ -1,0 +1,86 @@
+<!doctype html>
+<html>
+
+<head>
+    <title>Dungeons_and_Dragons</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0">
+    <meta name="mobile-web-app-capable" content="yes">
+    <meta name="apple-mobile-web-app-capable" content="yes">
+    <script src="bower_components/webcomponentsjs/webcomponents.js"></script>
+    <link rel="import" href="bower_components/paper-input/paper-input.html">
+    <link rel="import" href="bower_components/core-animated-pages/core-animated-pages.html">
+    <link rel="import" href="bower_components/core-animated-pages/transitions/slide-from-right.html">
+    <link rel="import" href="custom_components/main/main.html">
+    <link rel="import" href="bower_components/paper-item/paper-item.html">
+    <link rel="import" href="bower_components/paper-fab/paper-fab.html">
+    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="index.css">
+    <script src="navbarUrls.js"></script>
+</head>
+
+<body unresolved>
+    <custom-main>
+        <!-- Page title -->
+        <h1 id="brand">Dungeons & Dragons</h1>
+        <!-- Navbar buttons -->
+        <template repeat="{{urls}}" id="urlTemplate">
+            <paper-item><a href="javascript:void(0);" horizontal center-justified layout data-link="{{link}}" onclick="navigate('{{link}}', '{{name}}', '{{id}}');">{{name}}</a>
+            </paper-item>
+        </template>
+        <!-- Top text (dynamically edited in navbarUrls.js) anything with the id #topText will used as top text.-->
+        <div id="topText" tool>Home</div>
+        <!-- The content -->
+        <section id="content">
+
+            <core-animated-pages id="navPages" transitions="slide-from-right">
+                <section id="homeSection">
+                    <!-- page id = 0 -->
+                    <h2>Welkom op</h2><img src="http://www.nerdist.com/wp-content/uploads/2013/05/dungeons-and-dragons-banner.jpg">
+                </section>
+                <section id="loginSection">
+                    <!-- page id = 1 -->
+                    Login
+                </section>
+                <section id="registerSection">
+                    <!-- page id = 2 -->
+                    <div id="registerDiv">
+                        <form action="javascript:void(0);">
+                            <paper-input-decorator label="Username" floatinglabel layout vertical>
+                                <input is="core-input" name="username" required>
+                            </paper-input-decorator>
+                            <paper-input-decorator label="Password" floatinglabel layout vertical>
+                                <input is="core-input" type="password" required>
+                            </paper-input-decorator>
+                             <paper-input-decorator label="Password Confirmation" floatinglabel layout vertical>
+                                <input is="core-input" type="password" required>
+                            </paper-input-decorator>
+                            <paper-input-decorator label="E-mail" floatinglabel layout vertical>
+                                <input is="core-input" type="email" required>
+                            </paper-input-decorator>
+                            <input is="core-input" type="submit">
+                        </form>
+                    </div>
+                </section>
+                <section id="characterSection">
+                    <!-- page id = 3 -->
+                    <h3>Here are all of your characters.</h3>
+                    <a href="new_character/index.html" target="_blank"><paper-fab icon="add"></paper-fab></a>
+
+
+
+                </section>
+
+            </core-animated-pages>
+
+
+
+
+        </section>
+    </custom-main>
+
+
+
+    <script src="pages.js"></script>
+</body>
+
+</html>
