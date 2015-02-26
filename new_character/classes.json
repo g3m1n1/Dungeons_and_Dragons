@@ -2,20 +2,56 @@
     {
       "id": 1,
       "name": "Ardent",
-      "reference": "PHB3"
+      "reference": "Player's handbook 3"
     },
 
     {
       "id": 2,
       "name": "Artificer",
-      "reference": "EPG"
+      "reference": "Eberron player's guide"
     },
 
     {
       "id": 3,
       "name": "Assassin",
-      "reference": "Dragon #379, HoS"
+      "reference": "dragon magazine #379 and Heroes of Shadow"
     }
+    {
+      "id": 4,
+      "name": "Avenger",
+      "reference": "Player's handbook 2"
+    },
+    {
+      "id": 5,
+      "name": "Barbarian",
+      "reference": "Player's handbook and Heroes of the Feywild"
+    }
+    {
+      "id": 6,
+      "name": "Bard",
+      "reference": "Player's handbook 2 and Heroes of the Feywild"
+    },
+    {
+      "id": 7,
+      "name": "Battlemind",
+      "reference": "Player's handbook 3"
+    },
+    {
+      "id": 8,
+      "name": "BladeSinger",
+      "reference": "Neverwinter setting"
+    },
+    {
+      "id": 9,
+      "name": "Cleric",
+      "reference": "Player's handbook and Heroes of the Fallen Lands"
+    },
+    {
+      "id": 10,
+      "name": "Druid",
+      "reference": "Player's handbook 2, Heroes of the Forgotten Kingdom and Heroes of the Feywild"
+    }
+
 
   ]
 
