@@ -1,8 +1,8 @@
 {
   "name": "Dungeons_and_Dragons",
-  "description": "",
+  "description": "Dungeons and dragons website dedicated to creating, editing and sharing characters for the fourth edition.",
   "homepage": "",
-  "keywords": [
+  "keywords": ["Dungeons and Dragons", "Polymer", "JavaScript", "PHP"
   ],
   "author": "",
   "private": true,
