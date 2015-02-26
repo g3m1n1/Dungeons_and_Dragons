@@ -6,24 +6,22 @@ document.addEventListener('polymer-ready', function() {
 
         // Add navbar items here in the form of name: "what you see in the navbar", link: "The url of the page.", id: pageIdentifier"
         urls: [{
+            id: 0,
             name: "Home",
-            link: "",
-            id: 0
-
+            link: ""
         }, {
+            id: 1,
             name: "Login",
-            link: "login",
-            id: 1
+            link: "login"
         }, {
+            id: 2,
             name: "Register",
-            link: "register",
-            id: 2
+            link: "register"
         }, {
+            id: 3,
             name: "Characters",
-            link: "characters",
-            id: 3
+            link: "characters"
         }
-
         ]
     };
 

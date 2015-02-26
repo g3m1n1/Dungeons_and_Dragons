@@ -8,12 +8,11 @@
     <meta name="mobile-web-app-capable" content="yes">
     <meta name="apple-mobile-web-app-capable" content="yes">
 
-
+<link rel="stylesheet" href="assets/css/styles.css">
   </head>
   <body>
 
     <h1>New character</h1>
-
 
 
 
@@ -29,7 +28,7 @@
 
   <script>
 
-  loadJSON("classes.json",function(response){ // Get the JSON file
+  loadJSON("assets/json/classes.json",function(response){ // Get the JSON file
     json = JSON.parse(response); // Parse JSON as JavaScript
 
     var dropdown = document.getElementById("classes") // Cache dropdown.
@@ -44,9 +43,6 @@
 
         dropdown.appendChild(option);
 
-
-
-      //document.getElementById("classes").innerHTML += "<option value="+classes['name']+">"+classes['name']+"</option>"; // Add every item into a dropdown.
     });
 
     // After the loop completes do...
@@ -61,7 +57,7 @@
 
 
 function setCharacterClass(){
-  var object = document.getElementById("pdf");
+  var object = document.getElementById("characterPdf");
   if(document.body.contains(object)){
     document.body.removeChild(object);
   }
@@ -71,7 +67,7 @@ function setCharacterClass(){
 
      var pdf = document.createElement("object");
      pdf.type = "application/pdf";
-     pdf.data = value+".pdf";
+     pdf.data = "assets/pdf/classes/"+value+".pdf";
     pdf.id = "characterPdf";
 
     document.body.appendChild(pdf);

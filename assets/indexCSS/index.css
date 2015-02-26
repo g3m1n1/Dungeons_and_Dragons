@@ -1,5 +1,5 @@
-@import url("pageCss/register.css");
-@import url("pageCss/characters.css");
+@import url("../pageCss/register.css");
+@import url("../pageCss/characters.css");
 
       #brand{
         font-size:1em;
