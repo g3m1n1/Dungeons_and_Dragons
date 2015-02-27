@@ -63,27 +63,29 @@ h1{
 
 
 #classes{
-  height:230px;
+  position:relative;
+  height:400px;
 }
 
 #classImages{
   overflow-x:scroll;
+  overflow-y:hidden;
   white-space:nowrap;
   width:600px;
 
 }
 
 core-menu>.core-selected{
-  filter: brightness(50%);
--webkit-filter: brightness(50%);
--moz-filter: brightness(50%);
--o-filter: brightness(50%);
--ms-filter: brightness(50%);
+  filter: brightness(150%) contrast(150%);
+-webkit-filter: brightness(150%) contrast(150%);
+-moz-filter: brightness(150%) contrast(150%);
+-o-filter: brightness(150%) contrast(150%);
+-ms-filter: brightness(150%) contrast(150%);
 }
-#classes>core-item img{
-  width:33.333%;
-  height:100%;
-  padding-left:1%;
+
+#classes>core-item>core-image{
+
+  margin-left:1%;
 
 }
 
