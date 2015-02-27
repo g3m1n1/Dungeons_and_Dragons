@@ -1,83 +1,113 @@
-{"classes":[
-    {
-      "id": 1,
-      "name": "Ardent",
-      "reference": "Player's handbook 3"
-    },
+{
+   "classes":[
+      {
+         "id":1,
+         "name":"Ardent"
+      },
+      {
+         "id":2,
+         "name":"Artificer"
+      },
+      {
+         "id":3,
+         "name":"Assassin"
+      },
+      {
+         "id":4,
+         "name":"Avenger"
+      },
+      {
+         "id":5,
+         "name":"Barbarian"
+      },
+      {
+         "id":6,
+         "name":"Bard"
+      },
+      {
+         "id":7,
+         "name":"Battlemind"
+      },
+      {
+         "id":8,
+         "name":"BladeSinger"
+      },
+      {
+         "id":9,
+         "name":"Cleric"
+      },
+      {
+         "id":10,
+         "name":"Druid"
+      },
+      {
+         "id":11,
+         "name":"Fighter"
+      },
+      {
+         "id":12,
+         "name":"Invoker"
+      },
+      {
+         "id":13,
+         "name":"Monk"
+      },
+      {
+         "id":14,
+         "name":"Paladin"
+      },
+      {
+         "id":15,
+         "name":"Psion"
+      },
+      {
+        "id":16,
+        "name":"Ranger"
+      },
+      {
+        "id":17,
+        "name":"Rogue"
+      },
+      {
+        "id":18,
+        "name":"Runepriest"
+      },
+      {
+        "id":19,
+        "name":"Seeker"
+      },
+      {
+        "id":20,
+        "name":"Shaman"
+      },
+      {
+        "id":21,
+        "name":"Sorcerer"
+      },
+      {
+        "id":22,
+        "name":"SwordMage"
+      },
+      {
+        "id":23,
+        "name":"Vampire"
+      },
+      {
+        "id":24,
+        "name":"Warden"
+      },
+      {
+        "id":25,
+        "name":"Warlock"
+      },
+      {
+        "id":26,
+        "name":"Warlord"
+      },
+      {
+        "id":27,
+        "name":"Wizard"
+      }
 
-    {
-      "id": 2,
-      "name": "Artificer",
-      "reference": "Eberron player's guide"
-    },
-
-    {
-      "id": 3,
-      "name": "Assassin",
-      "reference": "dragon magazine #379 and Heroes of Shadow"
-    },
-    {
-      "id": 4,
-      "name": "Avenger",
-      "reference": "Player's handbook 2"
-    },
-    {
-      "id": 5,
-      "name": "Barbarian",
-      "reference": "Player's handbook and Heroes of the Feywild"
-    },
-    {
-      "id": 6,
-      "name": "Bard",
-      "reference": "Player's handbook 2 and Heroes of the Feywild"
-    },
-    {
-      "id": 7,
-      "name": "Battlemind",
-      "reference": "Player's handbook 3"
-    },
-    {
-      "id": 8,
-      "name": "BladeSinger",
-      "reference": "Neverwinter setting"
-    },
-    {
-      "id": 9,
-      "name": "Cleric",
-      "reference": "Player's handbook and Heroes of the Fallen Lands"
-    },
-    {
-      "id": 10,
-      "name": "Druid",
-      "reference": "Player's handbook 2, Heroes of the Forgotten Kingdom and Heroes of the Feywild"
-    },
-    {
-      "id": 11,
-      "name": "Fighter",
-      "reference": "Player's handbook and Heroes of the Fallen Lands"
-    },
-    {
-      "id": 12,
-      "name": "Invoker",
-      "reference": "Player's handbook 2"
-    },
-    {
-      "id": 13,
-      "name": "Monk",
-      "reference": "Player's handbook 3"
-    },
-    {
-      "id": 14,
-      "name": "Paladin",
-      "reference": "Player's handbook, Heroes of the Forgotten Kingdoms and Heroes of the Fallen Lands"
-    },
-    {
-      "id": 15,
-      "name": "Psion",
-      "reference": "Player's handbook 3"
-    }
-
-
-  ]
-
+   ]
 }
