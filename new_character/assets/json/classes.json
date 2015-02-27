@@ -50,6 +50,31 @@
       "id": 10,
       "name": "Druid",
       "reference": "Player's handbook 2, Heroes of the Forgotten Kingdom and Heroes of the Feywild"
+    },
+    {
+      "id": 11,
+      "name": "Fighter",
+      "reference": "Player's handbook and Heroes of the Fallen Lands"
+    },
+    {
+      "id": 12,
+      "name": "Invoker",
+      "reference": "Player's handbook 2"
+    },
+    {
+      "id": 13,
+      "name": "Monk",
+      "reference": "Player's handbook 3"
+    },
+    {
+      "id": 14,
+      "name": "Paladin",
+      "reference": "Player's handbook, Heroes of the Forgotten Kingdoms and Heroes of the Fallen Lands"
+    },
+    {
+      "id": 15,
+      "name": "Psion",
+      "reference": "Player's handbook 3"
     }
 
 

@@ -10,87 +10,75 @@
     <script src="../bower_components/webcomponentsjs/webcomponents.js"></script>
 <link rel="stylesheet" href="assets/css/index.css">
 <link rel="stylesheet" href="assets/css/styles.css">
-
+<link rel="import" href="../bower_components/core-animated-pages/core-animated-pages.html">
+<link rel="import" href="../bower_components/core-animated-pages/transitions/slide-from-bottom.html">
+<link rel="import" href="../bower_components/paper-input/paper-input.html">
+<link rel="import" href="../bower_components/paper-dropdown-menu/paper-dropdown-menu.html">
+<link rel="import" href="../bower_components/paper-dropdown/paper-dropdown.html">
+<link rel="import" href="../bower_components/core-menu/core-menu.html">
+<link rel="import" href="../bower_components/paper-item/paper-item.html">
+<link rel="import" href="../bower_components/core-image/core-image.html">
 <link rel="import" href="custom_components/main.html">
+<script src="assets/js/pageHandler.js"></script>
   </head>
   <body>
     <h1>New character</h1>
 
 
-<card></card>
+<core-animated-pages transitions="slide-from-bottom" selected="0" id="pages">
+
+<section id="pageOne"> <!-- Page id = 0 -->
+  <h2>Basic information</h2>
+  <form action="javascript:void(0);" method="POST">
+    <paper-input-decorator label="Character name" floatinglabel layout vertical>
+      <input is="core-input" name="char-name" type="text" required>
+    </paper-input-decorator>
 
 
-    <select id="classes">
+     <paper-input-decorator label="Gender" floatinglabel layout vertical>
+      <input is="core-input" name="char-gender" type="text" required>
+    </paper-input-decorator>
+
+    <paper-input-decorator label="Weight" floatinglabel layout vertical>
+      <input is="core-input" name="char-weight" type="text" required>
+    </paper-input-decorator>
+
+    <paper-input-decorator label="Height" floatinglabel layout vertical>
+      <input is="core-input" name="char-height" type="text" required>
+    </paper-input-decorator>
+
+    <paper-input-decorator label="Age" floatinglabel layout vertical>
+      <input is="core-input" name="char-age" type="text" required>
+    </paper-input-decorator>
+
+    <paper-input-decorator label="Size" floatinglabel layout vertical>
+      <input is="core-input" name="char-size" type="text" required>
+    </paper-input-decorator>
+  </form>
+
+  <button onclick="pageHandle('next');">Next</button>
+</section>
+<section id="pageTwo"> <!-- Page id = 1 -->
+  <h2>Class</h2>
+
+  <section id="classImages">
+    <core-menu id="classes">
+    </core-menu>
+  </section>
 
 
-    </select>
-<button onclick="setCharacterClass();">Select this class</button>
+  <button onclick="pageHandle('next');">Next</button>
+  <button onclick="pageHandle('back');">Back</button>
+</section>
 
-
-
-
-  <script>
-
-  loadJSON("assets/json/classes.json",function(response){ // Get the JSON file
-    json = JSON.parse(response); // Parse JSON as JavaScript
-
-    var dropdown = document.getElementById("classes") // Cache dropdown.
-
-    json["classes"].forEach(function(classes){ // Loop trough array
-
-    var option = document.createElement("option"), // Create option tag
-        text = document.createTextNode(classes['name']);
-
-
-        option.appendChild(text);
-
-        dropdown.appendChild(option);
-
-    });
-
-    // After the loop completes do...
-
-
-
-    })
-
-
-
-
-
-
-function setCharacterClass(){
-  var object = document.getElementById("characterPdf");
-  if(document.body.contains(object)){
-    document.body.removeChild(object);
-  }
-
-  var classDropdown = document.getElementById("classes"),
-      value = classDropdown.value;
-
-     var pdf = document.createElement("object");
-     pdf.type = "application/pdf";
-     pdf.data = "assets/pdf/classes/"+value+".pdf";
-    pdf.id = "characterPdf";
-
-    document.body.appendChild(pdf);
-
-}
+</core-animated-pages>
 
 
 
-  function loadJSON(file, callback){ // Create a function to load files with AJAX
-    var xobj = new XMLHttpRequest(); // Create a new http request
-    xobj.overrideMimeType("application/json"); // Set mime type to JSON
-    xobj.open('POST',file,true); // Use post to gather the file asynchronously
-    xobj.onreadystatechange = function(){ // If the ready state changes
-      if(xobj.readyState == 4 && xobj.status == "200"){ // And if the file was loaded succesfully
-        callback(xobj.responseText); // Do whatever you want with the file
-      }
-    };
-    xobj.send(null); // Send the request
-  }
-  </script>
+
+<script src="assets/js/loadJSON.js"></script>
+<script src="assets/js/getCharacterClassList.js"></script>
+
   </body>
 
 </html>
