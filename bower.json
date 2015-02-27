@@ -12,6 +12,7 @@
     "core-animated-pages": "Polymer/core-animated-pages#latest",
     "core-scaffold": "Polymer/core-scaffold#latest",
     "core-ajax": "Polymer/core-ajax#latest",
-    "core-pages": "Polymer/core-pages#latest"
+    "core-pages": "Polymer/core-pages#latest",
+    "core-image": "Polymer/core-image#latest"
   }
 }
