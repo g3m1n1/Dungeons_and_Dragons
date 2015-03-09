@@ -1,4 +1,4 @@
-#Dungeons and Dragons website
+#Dungeons and Dragons website123
 A website where users can create, manage and share characters and more for Dungeons and Dragons the fourth edition.
 
 *Creating characters is hard* <br>
@@ -9,7 +9,7 @@ Why?<br>
 *Because you need tons of books* <br>
 
 That's where this website comes in, it automatically detects what you are doing and only displays the things you need.
-worried about how to calculate you skills and levels? 
+worried about how to calculate you skills and levels?
 
 <strong>Don't</strong>.
 
